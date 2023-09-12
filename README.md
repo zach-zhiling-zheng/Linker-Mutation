@@ -108,5 +108,10 @@ Model 3P (IUPAC): "ft:gpt-3.5-turbo-0613:uc-berkeley::7xkDldW9"
 
 
 
+![image](https://github.com/zach-zhiling-zheng/Linker-Mutation/assets/107890298/abddfcaa-af7a-44f3-b883-c28b439160a8)
+
+
+
+
 
 
