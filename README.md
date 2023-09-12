@@ -1,5 +1,5 @@
 # Linker-Mutation
-text here
+
 <small>
 | Mutation Method | Description | Consequence | Action 1 | Action 2 | Action 3 | Action 4 | Action 5 |
 |-----------------|-------------|-------------|----------|----------|----------|----------|----------|
@@ -106,10 +106,7 @@ Model 1P (SMMILES): "ft:gpt-3.5-turbo-0613:uc-berkeley::7xiQHz21"
 Model 2P (SELFIES):  "ft:gpt-3.5-turbo-0613:uc-berkeley::7xjKObLF"  
 Model 3P (IUPAC): "ft:gpt-3.5-turbo-0613:uc-berkeley::7xkDldW9"
 
-
-![image](https://github.com/zach-zhiling-zheng/Linker-Mutation/assets/107890298/baaf8a7c-e321-4125-8797-7193f82bd9e0)
-
-
+![image](https://github.com/zach-zhiling-zheng/Linker-Mutation/assets/107890298/00459d9e-7ef5-4e12-a7fc-02313914b275)
 
 
 
