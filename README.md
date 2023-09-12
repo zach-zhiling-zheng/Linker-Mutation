@@ -107,7 +107,8 @@ Model 2P (SELFIES):  "ft:gpt-3.5-turbo-0613:uc-berkeley::7xjKObLF"
 Model 3P (IUPAC): "ft:gpt-3.5-turbo-0613:uc-berkeley::7xkDldW9"
 
 
-![image](https://github.com/zach-zhiling-zheng/Linker-Mutation/assets/107890298/d8bd4e2a-08ca-42fb-99ac-af3c5d3bf18a)
+![image](https://github.com/zach-zhiling-zheng/Linker-Mutation/assets/107890298/baaf8a7c-e321-4125-8797-7193f82bd9e0)
+
 
 
 
