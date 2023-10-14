@@ -82,7 +82,8 @@ Compound: C(C1=CC=C(C(=O)O)C=C1)(=O)O""}, {""role"": ""assistant"", ""content"":
 > The 'X' here could be either R, S, I, or P depending on the linker mutation method used (as described above)
 
 > [!IMPORTANT]
-> :key: denotes the fine-tuned model ID of the specific model
+> :key: denotes the model ID of the fine-tuned sub-model <br>
+> :moneybag: denotes the training cost for all the fine-tuned sub-models
 
 ### Model 1X 
 
@@ -94,6 +95,8 @@ Number of data points (Total=3943):
 - [x] Method S: 1990 --> **Model 1S** --> :key: `ft:gpt-3.5-turbo-0613:uc-berkeley::7wF4Wvdr`
 - [x] Method I: 746 --> **Model 1I** --> :key: `ft:gpt-3.5-turbo-0613:uc-berkeley::7xJmyNlq`
 - [x] Method P: 507 --> **Model 1P** --> :key: `ft:gpt-3.5-turbo-0613:uc-berkeley::7xiQHz21`
+
+:moneybag: $20 for every 2M tokens
 
 
 
