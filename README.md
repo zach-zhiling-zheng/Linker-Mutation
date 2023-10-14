@@ -76,7 +76,30 @@ Your response should begin with 'New Compound: ', followed by the updated SMILES
 Compound: C(C1=CC=C(C(=O)O)C=C1)(=O)O""}, {""role"": ""assistant"", ""content"": ""New Compound: C1=CC(=CC(=C1)C(=O)O)C(=O)O""}]}"						
 ```
 
-## Details about each model
+## Summary of the different chemical representations considered
+
+> [!NOTE]
+> The 'X' here could be either R, S, I, or P depending on the linker mutation method used (as described above)
+
+> [!IMPORTANT]
+> :key: denotes the fine-tuned model ID of the specific model
+
+### Model 1X 
+
+Chemical Representation: `SMILES`
+
+Number of data points (Total=3943): 
+
+- [x] Method R: 700 --> **Model 1R** --> :key: `ft:gpt-3.5-turbo-0613:uc-berkeley::7vd4eEZu`
+- [x] Method S: 1990 --> **Model 1S** --> :key: `ft:gpt-3.5-turbo-0613:uc-berkeley::7wF4Wvdr`
+- [x] Method I: 746 --> **Model 1I** --> :key: `ft:gpt-3.5-turbo-0613:uc-berkeley::7xJmyNlq`
+- [x] Method P: 507 --> **Model 1P** --> :key: `ft:gpt-3.5-turbo-0613:uc-berkeley::7xiQHz21`
+
+
+
+
+
+
 
 
 
