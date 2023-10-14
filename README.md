@@ -2,7 +2,9 @@
 
 <img src="./docs/images/logo.png" width="20%" height="20%">
 
-**Method S:**
+## Summary of different linker mutation methods
+
+### Method S:
 
 Substitution of Functional Groups by modifying existing functional groups or introducing new ones to the linker:
 
@@ -21,7 +23,7 @@ Your response should begin with 'New Compound: ', followed by the updated SMILES
 Compound: C(C1=CC=C(C(=O)O)C=C1)(=O)O"}, {"role": "assistant", "content": "New Compound: OC1=C(C(=O)O)C=CC(=C1)C(=O)O"}]}
 ```
 
-**Method I:**
+### Method I:
 
 Insertion of Bonds and Rings by either inserting or deleting a linker expansion spacer like phenyl ring, double bond, triple bond, or azo group specifically at the location where a carboxylate group is directly connected to either a ring, a C=C double bond, a C $\equiv$ C triple bond, or an N=N azo group within the linker:
 
@@ -40,7 +42,7 @@ Compound: C(C1=CC=C(C(=O)O)C=C1)(=O)O""}, {""role"": ""assistant"", ""content"":
 ```
 
 
-**Method R:**
+### Method R:
 
 Heteroatom Replacement by swapping out atoms in the linker with different heteroatoms (e.g., replace a carbon atom with a nitrogen or sulfur atom):
 
@@ -58,7 +60,7 @@ Compound: C(C1=CC=C(C(=O)O)C=C1)(=O)O""}, {""role"": ""assistant"", ""content"":
 ```
 
 
-**Method P：**
+### Method P：
 
 Coordination Site Positional Isomerization by changing the position of coordination sites like COOH or N within aromatic or non-aromatic rings, including 5-membered, 6-membered, 7-membered, and fused rings:
 
@@ -74,8 +76,8 @@ Your response should begin with 'New Compound: ', followed by the updated SMILES
 Compound: C(C1=CC=C(C(=O)O)C=C1)(=O)O""}, {""role"": ""assistant"", ""content"": ""New Compound: C1=CC(=CC(=C1)C(=O)O)C(=O)O""}]}"						
 ```
 
+## Details about each model
 
-**Summary：**
 
 
 | Model | Chemical representations | Number of datapoints | Total mutations | Input System Prompt | Input User Message | Training Cost for all 4 sub models | Output Fine-tune model names |
@@ -86,7 +88,7 @@ Compound: C(C1=CC=C(C(=O)O)C=C1)(=O)O""}, {""role"": ""assistant"", ""content"":
 
 
 
-**Model IDs:**
+### Model IDs:
 
 
 Model 1R (SMMILES): "ft:gpt-3.5-turbo-0613:uc-berkeley::7vd4eEZu"
