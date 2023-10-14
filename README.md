@@ -109,6 +109,33 @@ Model 3P (IUPAC): "ft:gpt-3.5-turbo-0613:uc-berkeley::7xkDldW9"
 
 ![image](https://github.com/zach-zhiling-zheng/Linker-Mutation/assets/107890298/40816660-5565-4af3-9d02-27959ad47be3)
 
+## License 
+
+The input prompt generation script is distributed under the MIT open source license (see [`LICENSE.txt`](LICENSE.txt))
+
+
+## Contributing
+
+If you have any questions/comments/feedback, please feel free to reach out to any of the authors.
+
+In addition, if you have any new feature requests or if you find any bugs, please open a new [issue](https://github.com/zach-zhiling-zheng/Linker-Mutation/issues).
+
+## Acknowledgements
+
+We acknowledge the financial support from the following sources:
+1. Defense Advanced Research Projects Agency (DARPA) under contract HR0011-21-C-0020 
+2. Bakar Institute of Digital Materials for the Planet (BIDMaP)
+3. NIH (Grant S10-RR027172)
+4. Kavli ENSI Graduate Student Fellowship
+
+## References
+
+For GPT-4: 
+
+> GPT-4 Technical Report <br/>
+> OpenAI <br/>
+> https://arxiv.org/abs/2303.08774 <br/>
+
 
 
 
