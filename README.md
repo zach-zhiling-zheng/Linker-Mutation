@@ -98,10 +98,31 @@ Number of data points (Total=3943):
 
 :moneybag: $20 for every 2M tokens
 
+### Model 2X 
 
+Chemical Representation: `SELFIES`
 
+Number of data points (Total=3943): 
 
+- [x] Method R: 700 --> **Model 2R** --> :key: `ft:gpt-3.5-turbo-0613:uc-berkeley::7veHJ0eR`
+- [x] Method S: 1990 --> **Model 2S** --> :key: `ft:gpt-3.5-turbo-0613:uc-berkeley::7wGGcyfU`
+- [x] Method I: 746 --> **Model 2I** --> :key: `ft:gpt-3.5-turbo-0613:uc-berkeley::7xKePzT5`
+- [x] Method P: 507 --> **Model 2P** --> :key: `ft:gpt-3.5-turbo-0613:uc-berkeley::7xjKObLF`
 
+:moneybag: $20 for every 2M tokens   
+
+### Model 3X 
+
+Chemical Representation: `IUPAC`
+
+Number of data points (Total=3920): 
+
+- [x] Method R: 700 --> **Model 3R** --> :key: `ft:gpt-3.5-turbo-0613:uc-berkeley::7vyL332G`
+- [x] Method S: 1970 --> **Model 3S** --> :key: `ft:gpt-3.5-turbo-0613:uc-berkeley::7wHSe0sw`
+- [x] Method I: 746 --> **Model 3I** --> :key: `ft:gpt-3.5-turbo-0613:uc-berkeley::7xM2Vcbv`
+- [x] Method P: 507 --> **Model 3P** --> :key: `ft:gpt-3.5-turbo-0613:uc-berkeley::7xkDldW9`
+
+:moneybag: $20 for every 2M tokens   
 
 
 
