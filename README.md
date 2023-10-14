@@ -1,6 +1,6 @@
 # Linker-Mutation
 
-
+<img src="./docs/images/logo.png" width="20%" height="20%">
 
 **Method S:**
 
