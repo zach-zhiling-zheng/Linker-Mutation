@@ -89,6 +89,8 @@ Compound: C(C1=CC=C(C(=O)O)C=C1)(=O)O""}, {""role"": ""assistant"", ""content"":
 
 Chemical Representation: `SMILES`
 
+Description: `Train full set of SMILES, including hypothetical structures`
+
 Number of data points (Total=3943): 
 
 - [x] Method R: 700 --> **Model 1R** --> :key: `ft:gpt-3.5-turbo-0613:uc-berkeley::7vd4eEZu`
@@ -101,6 +103,8 @@ Number of data points (Total=3943):
 ### Model 2X 
 
 Chemical Representation: `SELFIES`
+
+Description: `Train full set of SELFIES strings converted from SMILES code`
 
 Number of data points (Total=3943): 
 
@@ -115,6 +119,8 @@ Number of data points (Total=3943):
 
 Chemical Representation: `IUPAC`
 
+Description: `Train IUPAC names found in PubChem, plus those converted by Syntelly using SMILES`
+
 Number of data points (Total=3920): 
 
 - [x] Method R: 700 --> **Model 3R** --> :key: `ft:gpt-3.5-turbo-0613:uc-berkeley::7vyL332G`
@@ -124,39 +130,27 @@ Number of data points (Total=3920):
 
 :moneybag: $20 for every 2M tokens   
 
+## Performance of the different models
 
+> [!NOTE]
+> TP = True Positive <br>
+> TN = True Negative <br>
+> FP = False Positive <br>
+> FN = False Negative <br>
+> GPT-3.5 refers to the 'Insert exact model ID' without fine-tuning <br>
+> GPT-4 refers to the 'Insert exact model ID' without finetuning
 
+### For all the models combined: 
 
-| Model | Chemical representations | Number of datapoints | Total mutations | Input System Prompt | Input User Message | Training Cost for all 4 sub models | Output Fine-tune model names |
-|-------|--------------------------|----------------------|-----------------|---------------------|--------------------|-----------------------------------|-----------------------------|
-| Model 1X | Train full set of SMILES, including hypothetical structures | Method R: 700, S: 1990, I:746, P:507 | 3943 | ...SMILES code of a MOF linker | Action: (1) Replace a carbon atom in the ring with nitrogen, or vice versa. | 2M tokens / ~20 USD | Model 1S, Model 1I, Model 1R, Model 1P |
-| Model 2X | Train full set of SELFIES strings converted from SMILES code | Method R: 700, S: 1990, I:746, P:507 | 3943 | ...SELFIES string of a MOF linker. Here, SELFIES (SELF-referencing Embedded Strings) is a string-based representation of molecules. Every SELFIES string corresponds to a valid molecule, similar to how SMILES representations work. | Action: (1) Replace a carbon atom in the ring with nitrogen, or vice versa. | 4M tokens / ~40 USD | Model 2S, Model 2I, Model 2R, Model 2P |
-| Model 3X | Train IUPAC names found in PubChem, plus those converted by Syntelly using SMILES | Method R: 700, S: 1970, I:746, P:504 | 3920 | ...IUPAC name of a MOF linker | Action: (1) Replace a carbon atom in the ring with nitrogen, or vice versa. | 2M tokens / ~20 USD | Model 3S, Model 3I, Model 3R, Model 3P |
-
-
-
-### Model IDs:
-
-
-Model 1R (SMMILES): "ft:gpt-3.5-turbo-0613:uc-berkeley::7vd4eEZu"
-Model 2R (SELFIES):  "ft:gpt-3.5-turbo-0613:uc-berkeley::7veHJ0eR"  
-Model 3R (IUPAC): "ft:gpt-3.5-turbo-0613:uc-berkeley::7vyL332G"
-
-Model 1S (SMMILES): "ft:gpt-3.5-turbo-0613:uc-berkeley::7wF4Wvdr"
-Model 2S (SELFIES):  "ft:gpt-3.5-turbo-0613:uc-berkeley::7wGGcyfU"  
-Model 3S (IUPAC): "ft:gpt-3.5-turbo-0613:uc-berkeley::7wHSe0sw"
-
-Model 1I (SMMILES): "ft:gpt-3.5-turbo-0613:uc-berkeley::7xJmyNlq"
-Model 2I (SELFIES):  "ft:gpt-3.5-turbo-0613:uc-berkeley::7xKePzT5"  
-Model 3I (IUPAC): "ft:gpt-3.5-turbo-0613:uc-berkeley::7xM2Vcbv"
-
-Model 1P (SMMILES): "ft:gpt-3.5-turbo-0613:uc-berkeley::7xiQHz21"
-Model 2P (SELFIES):  "ft:gpt-3.5-turbo-0613:uc-berkeley::7xjKObLF"  
-Model 3P (IUPAC): "ft:gpt-3.5-turbo-0613:uc-berkeley::7xkDldW9"
-
-
-
-![image](https://github.com/zach-zhiling-zheng/Linker-Mutation/assets/107890298/40816660-5565-4af3-9d02-27959ad47be3)
+| Model | Format | TP | TN | FP | FN | Total | Accuracy (%) | Precision (%) | Recall (%) | F1 Score (%) |  
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| GPT-3.5 | SMILES | 27 | 16 | 320 | 57 | 420 | 10.2 | 7.8 | 32.1 | 12.5 |
+| GPT-3.5 | IUPAC | 47 | 17 | 301 | 55 | 420 | 15.2 | 13.5 | 46.1 | 20.9 |
+| GPT-4 | SMILES | 77 | 58 | 271 | 14 | 420 | 32.1 | 22.1 | 84.6 | 35.1 |
+| GPT-4 | IUPAC | 95 | 70 | 248 | 7 | 420 | 39.3 | 27.7 | 93.1 | 42.7 |
+| Model 1 | SMILES | 231 | 125 | 49 | 15 | 420 | 84.8 | 82.5 | 93.9 | 87.8 |
+| Model 2 | SELFIES | 125 | 120 | 153 | 22 | 420 | 58.3 | 45.0 | 85.0 | 58.8 |
+| Model 3 | IUPAC | 250 | 112 | 49 | 9 | 420 | 86.2 | 83.6 | 96.5 | 89.6 |
 
 ## License 
 
