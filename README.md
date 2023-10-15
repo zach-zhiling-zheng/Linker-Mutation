@@ -140,7 +140,7 @@ Number of data points (Total=3920):
 > GPT-3.5 refers to the 'Insert exact model ID' without fine-tuning <br>
 > GPT-4 refers to the 'Insert exact model ID' without finetuning
 
-### For all the models combined: 
+### For all the methods (Method S + I + R + P) combined: 
 
 | Model | Format | TP | TN | FP | FN | Total | Accuracy (%) | Precision (%) | Recall (%) | F1 Score (%) |  
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
