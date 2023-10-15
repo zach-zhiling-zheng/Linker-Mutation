@@ -152,17 +152,24 @@ Number of data points (Total=3920):
 | Model 2 | SELFIES | 125 | 120 | 153 | 22 | 420 | 58.3 | 45.0 | 85.0 | 58.8 |
 | Model 3 | IUPAC | 250 | 112 | 49 | 9 | 420 | 86.2 | 83.6 | 96.5 | 89.6 |
 
-### For only the method S task: 
+<br>
 
-| Model | Format | TP | TN | FP | FN | Total | Accuracy (%) | Precision (%) | Recall (%) | F1 Score (%) |  
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| GPT-3.5 | SMILES | 9 | 0 | 116 | 25 | 150 | 6.0 | 7.2 | 26.5 | 11.3 |
-| GPT-3.5 | IUPAC | 35 | 1 | 108 | 6 | 150 | 24.0 | 24.5 | 85.4 | 38.0 |
-| GPT-4 | SMILES | 39 | 13 | 92 | 6 | 150 | 34.7 | 29.8 | 86.7 | 44.3 |
-| GPT-4 | IUPAC | 74 | 16 | 56 | 4 | 150 | 60.0 | 56.9 | 94.9 | 71.2 |
-| Model 1S | SMILES | 93 | 23 | 34 | 0 | 150 | 77.3 | 73.2 | 100.0 | 84.5 |
-| Model 2S | SELFIES | 7 | 19 | 117 | 7 | 150 | 17.3 | 5.6 | 50.0 | 10.1 |
-| Model 3S | IUPAC | 116 | 18 | 16 | 0 | 150 | 89.3 | 87.9 | 100.0 | 93.5 |
+<details>
+  <summary><i>For only the <b>method S</b> task: </i></summary>
+
+  | Model | Format | TP | TN | FP | FN | Total | Accuracy (%) | Precision (%) | Recall (%) | F1 Score (%) |  
+  | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+  | GPT-3.5 | SMILES | 9 | 0 | 116 | 25 | 150 | 6.0 | 7.2 | 26.5 | 11.3 |
+  | GPT-3.5 | IUPAC | 35 | 1 | 108 | 6 | 150 | 24.0 | 24.5 | 85.4 | 38.0 |
+  | GPT-4 | SMILES | 39 | 13 | 92 | 6 | 150 | 34.7 | 29.8 | 86.7 | 44.3 |
+  | GPT-4 | IUPAC | 74 | 16 | 56 | 4 | 150 | 60.0 | 56.9 | 94.9 | 71.2 |
+  | Model 1S | SMILES | 93 | 23 | 34 | 0 | 150 | 77.3 | 73.2 | 100.0 | 84.5 |
+  | Model 2S | SELFIES | 7 | 19 | 117 | 7 | 150 | 17.3 | 5.6 | 50.0 | 10.1 |
+  | Model 3S | IUPAC | 116 | 18 | 16 | 0 | 150 | 89.3 | 87.9 | 100.0 | 93.5 |
+
+</details>
+
+
 
 
 ## License 
