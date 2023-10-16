@@ -182,7 +182,20 @@ Number of data points (Total=3920):
 
 </details>
 
+<details>
+  <summary><i>For only the <b>method R</b> task: </i></summary>
 
+  | Model | Format | TP | TN | FP | FN | Total | Accuracy (%) | Precision (%) | Recall (%) | F1 Score (%) |  
+  | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+  | GPT-3.5 | SMILES | 1 | 7 | 82 | 0 | 90 | 8.9 | 1.2 | 100.0 | 2.4 |
+  | GPT-3.5 | IUPAC | 2 | 7 | 68 | 13 | 90 | 10.0 | 2.9 | 13.3 | 4.7 |
+  | GPT-4 | SMILES | 9 | 14 | 67 | 0 | 90 | 25.6 | 11.8 | 100.0 | 21.2 |
+  | GPT-4 | IUPAC | 2 | 30 | 57 | 1 | 90 | 35.6 | 3.4 | 66.7 | 6.5 |
+  | Model 1R | SMILES | 19 | 60 | 5 | 6 | 90 | 87.8 | 79.2 | 76.0 | 77.6 |
+  | Model 2R | SELFIES | 16 | 60 | 9 | 5 | 90 | 84.4 | 64.0 | 76.2 | 69.6 |
+  | Model 3R | IUPAC | 13 | 58 | 16 | 3 | 90 | 78.9 | 44.8 | 81.3 | 57.8 |
+
+</details>
 ## License 
 
 The input prompt generation script is distributed under the MIT open source license (see [`LICENSE.txt`](LICENSE.txt))
