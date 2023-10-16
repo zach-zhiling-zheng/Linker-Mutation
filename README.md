@@ -196,6 +196,23 @@ Number of data points (Total=3920):
   | Model 3R | IUPAC | 13 | 58 | 16 | 3 | 90 | 78.9 | 44.8 | 81.3 | 57.8 |
 
 </details>
+
+<details>
+  <summary><i>For only the <b>method P</b> task: </i></summary>
+
+  | Model | Format | TP | TN | FP | FN | Total | Accuracy (%) | Precision (%) | Recall (%) | F1 Score (%) |  
+  | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+  | GPT-3.5 | SMILES | 2 | 9 | 39 | 10 | 60 | 18.3 | 4.9 | 16.7 | 7.5 |
+  | GPT-3.5 | IUPAC | 8 | 8 | 34 | 10 | 60 | 26.7 | 19.0 | 44.4 | 26.7 |
+  | GPT-4 | SMILES | 7 | 26 | 24 | 3 | 60 | 55.0 | 22.6 | 70.0 | 34.1 |
+  | GPT-4 | IUPAC | 13 | 21 | 24 | 2 | 60 | 56.7 | 35.1 | 86.7 | 50.0 |
+  | Model 1P | SMILES | 14 | 32 | 7 | 7 | 60 | 76.7 | 66.7 | 66.7 | 66.7 |
+  | Model 2P | SELFIES | 8 | 29 | 15 | 8 | 60 | 61.7 | 34.8 | 50.0 | 41.0 |
+  | Model 3P | IUPAC | 20 | 30 | 6 | 4 | 60 | 83.3 | 76.9 | 83.3 | 80.0 |
+
+</details>
+
+
 ## License 
 
 The input prompt generation script is distributed under the MIT open source license (see [`LICENSE.txt`](LICENSE.txt))
