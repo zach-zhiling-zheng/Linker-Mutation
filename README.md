@@ -150,7 +150,7 @@ Number of data points (Total=3920):
 | GPT-4 | IUPAC | 95 | 70 | 248 | 7 | 420 | 39.3 | 27.7 | 93.1 | 42.7 |
 | Model 1 | SMILES | 231 | 125 | 49 | 15 | 420 | 84.8 | 82.5 | 93.9 | 87.8 |
 | Model 2 | SELFIES | 125 | 120 | 153 | 22 | 420 | 58.3 | 45.0 | 85.0 | 58.8 |
-| Model 3 | IUPAC | 250 | 112 | 49 | 9 | 420 | 86.2 | 83.6 | 96.5 | 89.6 |
+| Model 3 | IUPAC | 250 | 112 | 49 | 9 | 420 | <u>86.2</u> | <u>83.6</u> | <u>96.5</u> | <u>89.6</u> |
 
 <details>
   <summary><i>For only the <b>method S</b> task: </i></summary>
