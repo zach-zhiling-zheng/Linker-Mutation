@@ -15,7 +15,7 @@ Substitution of Functional Groups by modifying existing functional groups or int
 (2) Introduce or remove a hydroxyl group from the ring.
 (3) Introduce or remove an amino group from the ring.
 (4) Introduce or remove a nitro group from the ring.
-(5) Introduce or remove a fluoro group  to the ring.
+(5) Introduce or remove a fluoro group from the ring.
 
 The user will first specify the desired mutation action, followed by 'Action: '. In the next line, the user will provide the SMILES code of the MOF linker to be mutated, starting with 'Compound: '.
 
