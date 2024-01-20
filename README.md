@@ -233,6 +233,11 @@ We acknowledge the financial support from the following sources:
 4. Kavli ENSI Graduate Student Fellowship
 
 ## References
+For this work:
+
+https://pubs.acs.org/doi/full/10.1021/jacs.3c12086
+https://pubs.acs.org/doi/suppl/10.1021/jacs.3c12086/suppl_file/ja3c12086_si_001.pdf
+
 
 For GPT-4: 
 
